@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta&display=swap");
+@import url("http://fonts.cdnfonts.com/css/orbitron-2");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #264e70;
+  color: #fff;
+  font-family: "Mukta", sans-serif;
+  text-align: center;
+  .container {
+    height: 100hv;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .main-title {
+      font-size: 35px;
+      color: #e58f20;
+      font-weight: 600;
+    }
+    .flex {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .timer-container {
+      margin: 5px 20px 20px;
+      h2 {
+        margin: 0;
+      }
+    }
+    .clock-container {
+      border: 2px solid #fff;
+      border-radius: 10px;
+      padding: 10px;
+      display: inline-block;
+      margin-top: 20px;
+      width: 350px;
+      background-color: #6033ba;
+      h1 {
+        margin: 0;
+      }
+      span {
+        font-size: 45px;
+        width: 50px;
+        font-family: "Orbitron", sans-serif;
+      }
+    }
+    button {
+      margin: 10px;
+      padding: 10px 15px;
+      font-size: 20px;
+      cursor: pointer;
+      background-color: #60c3bf;
+      color: #fff;
+      border-radius: 5px;
+      border: none;
+    }
+    .action-wrapper span {
+      font-size: 35px;
+      margin: 0 5px;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    transform: scale(0.75);
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    -ms-transform: scale(0.75);
+    -o-transform: scale(0.75);
+  }
+}
